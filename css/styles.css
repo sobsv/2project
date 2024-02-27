@@ -2,7 +2,8 @@
 
 /*ссылка*/
 .default-link {
-
+  font-size: 20px;
+  text-decoration: underline;
 }
 
 .container {
