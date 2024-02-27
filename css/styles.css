@@ -1,0 +1,19 @@
+@import "default.css";
+
+/*ссылка*/
+.default-link {
+
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+@media (max-width: 740px) {
+  body {
+    background-color: #000;
+  }
+}
+
