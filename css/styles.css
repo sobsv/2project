@@ -1,15 +1,70 @@
 @import "default.css";
+:root {
+  --black-color: #263238;
+  --base-color: #baef00;
+  --base-color-hover: #d9ff55;
+  --base-color-active: #a3d200;
+  --border-color: #E3E3E3;
+  --border-color-active: #BAEF00;
+  --placeholder-color: #8D8D8D;
+  --transition-duration: .3s;
+  --button-color-hover: #D9FF56;
+}
 
 /*ссылка*/
 .default-link {
+  color: var(--black-color);
   font-size: 20px;
   text-decoration: underline;
+  transition: color var(--transition-duration), background-color var(--transition-duration);
+}
+
+.default-link:focus-visible {
+  background-color: var(--base-color);
+  outline: none;
+}
+
+.default-link:hover {
+  color: var(--base-color-hover);
+}
+
+.default-link:active {
+  color: var(--base-color-active);
+}
+
+/*кнопка*/
+.default-button {
+  display: inline-block;
+  padding: 11px 47px;
+  font-size: 16px;
+  color: var(--black-color);
+  background-color: var(--border-color-active);
+  border: none;
+  border-radius: 12px;
+  transition: var(--transition-duration);
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  transition: outline-color var(--transition-duration), background-color var(--transition-duration);
+  cursor: pointer;
+}
+
+.default-button:focus-visible {
+  outline-color: var(--base-color);
+
+}
+
+.default-button:hover {
+  background-color: var(--button-color-hover);
+}
+
+.default-button:active {
+  background-color: var(--base-color-active);
 }
 
 .container {
-  max-width: 780px;
-  margin: 0 auto;
   padding: 40px 15px;
+  margin: 0 auto;
+  max-width: 780px;
 }
 
 @media (max-width: 740px) {
